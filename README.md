@@ -16,16 +16,17 @@
 
 ### Целевая аудитория
 
-- всего посещений - 84 млн пользователей в месяц
-- страниц за посещение - 1.28
-- стредняя продолжительность посещения - 00:01:05
+- всего посещений - 9,6 млрд пользователей в месяц
+- страниц за посещение - 8.84
+- стредняя продолжительность посещения - 00:11:58
 - географическое распределение трафика:
   
-  ![image](https://github.com/user-attachments/assets/fc5c4921-6319-437d-8407-6b36a29a4724)
+  ![image](https://github.com/user-attachments/assets/61c3984f-00cf-48e1-ae4b-3a9fc615cb70)
+
 - демографические показатели:
   
-  ![image](https://github.com/user-attachments/assets/80d510d1-2564-4b13-99f6-24b766b8d1bf)
+  ![image](https://github.com/user-attachments/assets/1f7420f2-615a-4178-880c-7aae0f6e935e)
 
 ## Список источников
 
-- https://www.similarweb.com/website/gmail.com/
+- https://www.similarweb.com/website/mail.google.com/

@@ -42,6 +42,8 @@
 
 ### Технические метрики
 
+- всего писем - 121.6 млрд в день
+
 ## Список источников
 
 - https://www.similarweb.com/website/mail.google.com/

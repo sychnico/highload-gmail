@@ -48,3 +48,4 @@
 - https://usesignhouse.com/blog/gmail-stats/
 - https://top.mail.ru/
 - https://inclient.ru/email-stats/
+- https://www.mailmodo.com/guides/email-marketing-statistics/

@@ -44,8 +44,8 @@
 ## Список источников
 
 - https://www.similarweb.com/website/mail.google.com/
+- https://www.mailmodo.com/guides/email-marketing-statistics/
 - https://www.dragapp.com/blog/gmail-stats/
 - https://usesignhouse.com/blog/gmail-stats/
 - https://top.mail.ru/
 - https://inclient.ru/email-stats/
-- https://www.mailmodo.com/guides/email-marketing-statistics/

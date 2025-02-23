@@ -42,6 +42,7 @@
 | DAU | 660M |
 | Хранилище пользователя | 15GB |
 | Максимальный размер письма | 25MB |
+| Средний размер письма | 75KB |
 | Максимальное количество писем пользователя в день | 500 |
 | Всего писем в день | 121B |
 | Писем пользователя в день | 20 |
@@ -62,3 +63,4 @@
 - https://top.mail.ru/
 - https://inclient.ru/email-stats/
 - https://www.demandsage.com/gmail-statistics/
+- https://mailmeteor.com/tools/email-size

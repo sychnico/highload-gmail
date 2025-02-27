@@ -87,3 +87,5 @@
 - https://inclient.ru/email-stats/
 - https://www.demandsage.com/gmail-statistics/
 - https://mailmeteor.com/tools/email-size
+- https://www.radicati.com/wp/wp-content/uploads/2009/05/email-stats-report-exec-summary.pdf
+- ttps://www.mxhero.com/post/save-the-planet-replace-email-attachments-with-file-share-links

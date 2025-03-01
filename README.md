@@ -79,6 +79,8 @@
 
 Суточный трафик - 44.5PB в день = 512 ГБит/сек
 
+## 3. Глобальная балансировка нагрузки
+
 ## Список источников
 
 1. https://www.mailmodo.com/guides/email-marketing-statistics/

@@ -81,12 +81,12 @@
 
 ## Список источников
 
-- https://www.mailmodo.com/guides/email-marketing-statistics/
-- https://www.dragapp.com/blog/gmail-stats/
-- https://usesignhouse.com/blog/gmail-stats/
-- https://top.mail.ru/
-- https://inclient.ru/email-stats/
-- https://www.demandsage.com/gmail-statistics/
-- https://mailmeteor.com/tools/email-size
-- https://www.radicati.com/wp/wp-content/uploads/2009/05/email-stats-report-exec-summary.pdf
-- https://www.mxhero.com/post/save-the-planet-replace-email-attachments-with-file-share-links
+1. https://www.mailmodo.com/guides/email-marketing-statistics/
+2. https://www.dragapp.com/blog/gmail-stats/
+3. https://usesignhouse.com/blog/gmail-stats/
+4. https://top.mail.ru/
+5. https://inclient.ru/email-stats/
+6. https://www.demandsage.com/gmail-statistics/
+7. https://mailmeteor.com/tools/email-size
+8. https://www.radicati.com/wp/wp-content/uploads/2009/05/email-stats-report-exec-summary.pdf
+9. https://www.mxhero.com/post/save-the-planet-replace-email-attachments-with-file-share-links

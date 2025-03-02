@@ -81,6 +81,8 @@
 
 ## 3. Глобальная балансировка нагрузки
 
+
+
 ## Список источников
 
 1. https://www.mailmodo.com/guides/email-marketing-statistics/
@@ -92,3 +94,5 @@
 7. https://mailmeteor.com/tools/email-size
 8. https://www.radicati.com/wp/wp-content/uploads/2009/05/email-stats-report-exec-summary.pdf
 9. https://www.mxhero.com/post/save-the-planet-replace-email-attachments-with-file-share-links
+10. https://www.similarweb.com/ru/website/gmail.com/
+11. https://submarine-cable-map-2023.telegeography.com/

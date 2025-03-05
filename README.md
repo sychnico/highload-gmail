@@ -42,7 +42,7 @@
 | Метрика | Значение |
 | --- | ----------- |
 | MAU | 2B[3] |
-| DAU | 660M |
+| DAU | 661M[19] |
 | Хранилище пользователя | 15GB[15] |
 | Средняя загрузка хранилища | 17000[16]*177KB = 3GB |
 | Максимальный размер письма | 25MB[14] |
@@ -143,3 +143,5 @@
 15. https://support.google.com/mail/answer/9312312?hl=en
 16. https://techjury.net/blog/gmail-statistics/
 17. https://prosperitymedia.com.au/how-many-emails-are-sent-per-day-in-2025/
+18. https://corp.vkcdn.ru/media/files/RUS_Press_Release_9M_2024.pdf
+19. Для расчета DAU использовались данные аналогичного сервиса - почты mail.ru[18]. Для этого MAU почты gmail было умножено на отношение DAU к MAU почты mail.ru (Допускаем что это отношение будет приблизительно одинаковым для всех почтовых сервисов): 2B[3] * 16.2M[18] / 49M[18] = 661M.

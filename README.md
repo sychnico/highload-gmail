@@ -118,7 +118,7 @@ RPS - 3.5M
 
 ## 5. Логическая схема БД
 
-![image](https://github.com/user-attachments/assets/fcc4c89c-02e0-477a-b5cd-2c07c54f9dd6)
+![image](https://github.com/user-attachments/assets/ec593dea-8609-4155-a057-fcfa29a73589)
 
 ### Описание таблиц
 
@@ -157,7 +157,6 @@ RPS - 3.5M
 | is_read | bool | 1B |
 | folder_id | int | 4B |
 | updated_at | timestamp | 8B |
-| is_draft | bool | 1B |
 
 **Таблица Attachment**
 
@@ -173,7 +172,6 @@ RPS - 3.5M
 | --- | ----------- | ---- |
 | id | int | 4B |
 | user_id | int | 4B |
-| order_number | int | 4B |
 | name | text | 256B |
 | created_at | timestamp | 8B |
 | updated_at | timestamp | 8B |

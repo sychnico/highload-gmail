@@ -120,6 +120,64 @@ RPS - 3.5M
 
 ![image](https://github.com/user-attachments/assets/fcc4c89c-02e0-477a-b5cd-2c07c54f9dd6)
 
+### Описание таблиц
+
+**Таблица User**
+
+| Поле | Тип данных | Размер |
+| --- | ----------- | ---- |
+| id | int | 4B |
+| email | text | 256B |
+| username | text | 256B |
+| password | text | 256B |
+| avatar_url | text | 256B |
+| created_at | timestamp | 8B |
+| updated_at | timestamp | 8B |
+
+**Таблица Message**
+
+| Поле | Тип данных | Размер |
+| --- | ----------- | ---- |
+| id | int | 4B |
+| title | text | 256B |
+| description | text | 25MB |
+| created_at | timestamp | 8B |
+| updated_at | timestamp | 8B |
+
+**Таблица Email_transaction**
+
+| Поле | Тип данных | Размер |
+| --- | ----------- | ---- |
+| id | int | 4B |
+| parent_transaction_id | int | 4B |
+| sender_email | text | 256B |
+| recipient_email | text | 256B |
+| message_id | int | 4B |
+| date | timestamp | 8B |
+| is_read | bool | 1B |
+| folder_id | int | 4B |
+| updated_at | timestamp | 8B |
+| is_draft | bool | 1B |
+
+**Таблица Attachment**
+
+| Поле | Тип данных | Размер |
+| --- | ----------- | ---- |
+| id | int | 4B |
+| message_id | int | 4B |
+| url | text | 256B |
+
+**Таблица Folder**
+
+| Поле | Тип данных | Размер |
+| --- | ----------- | ---- |
+| id | int | 4B |
+| user_id | int | 4B |
+| order_number | int | 4B |
+| name | text | 256B |
+| created_at | timestamp | 8B |
+| updated_at | timestamp | 8B |
+
 
 ## 6. Физическая схема БД
 

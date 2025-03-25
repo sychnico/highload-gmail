@@ -140,8 +140,8 @@ RPS - 3.5M
 | Поле | Тип данных | Размер |
 | --- | ----------- | ---- |
 | id | int | 4B |
-| title | text | 256B |
-| description | text | 75KB |
+| subject | text | 256B |
+| body | text | 75KB |
 | created_at | timestamp | 8B |
 | updated_at | timestamp | 8B |
 

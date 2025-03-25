@@ -119,7 +119,7 @@ RPS - 3.5M
 
 ## 5. Логическая схема БД
 
-![image](https://github.com/user-attachments/assets/5e29e1e1-a602-42ef-8fae-ddd5ee1acd24)
+![image](https://github.com/user-attachments/assets/bb48971e-6f77-4d9d-b459-200400f94a54)
 
 ### Описание таблиц
 
@@ -156,8 +156,10 @@ RPS - 3.5M
 | message_id | int | 4B |
 | date | timestamp | 8B |
 | is_read | bool | 1B |
-| is_bcc | bool | 1B |
+| is_cc | bool | 1B |
 | updated_at | timestamp | 8B |
+
+здесь поле is_cc обозначает является ли письмо копией. Если письмо не является копией или является скрытой копией (bcc), это поле равно false в списке получателей пользователь видит только себя (recipient_email). Иначе - необходимо выполнить sql-запрос для поиска всех получателей.
 
 **Таблица Attachment**
 

@@ -199,6 +199,43 @@ RPS - 3.5M
 
 ## 6. Физическая схема БД
 
+![image](https://github.com/user-attachments/assets/a57dfbb1-e716-4916-b725-9c9ae47cb6d0)
+
+### Индексы
+
+**Таблица User**
+
+- idx_user_email(email) - индекс для быстрой авторизации
+
+**Таблица Email_transaction**
+
+- idx_email_date(date) - индекс для быстрой сортировки
+- idx_email_recipient(recipient_email) - индекс для быстрой загрузки входящих
+- idx_email_sender(sender_email) - индекс для поиска писем по отправителю
+
+**Таблица Email_labels**
+
+- idx_transaction_id(email_transaction_id) - индекс для быстрой загрузки меток
+
+**Таблица Attachment**
+
+- idx_message_id(message_id) - индексдля быстрой загрузки вложений
+
+### Денормализация
+
+**Таблица User**
+
+- Поле unread_count для быстрого доступа к количеству непрочитанных писем
+
+**Таблица Email_transaction**
+
+- Поля sender_username, recipient_username для быстрого отображения отправителя и получателя.
+- Поле has_attachments для избегания лишнего поиска
+
+### Выбор СУБД
+
+### Клиентские библиотеки, интеграции
+
 ## Список источников
 
 1. https://www.mailmodo.com/guides/email-marketing-statistics/

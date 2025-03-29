@@ -232,9 +232,21 @@ RPS - 3.5M
 - Поля sender_username, recipient_username для быстрого отображения отправителя и получателя.
 - Поле has_attachments для избегания лишнего поиска
 
-### Выбор СУБД
+### Выбор СУБД, шардирование и резервирование
+
+| Таблица | СУБД | Шардирование | Резервирование |
+| --- | ----------- | ---- | --- |
+| User | PostgreSQL | Шардирование по user.email | Репликация master-slave, 2 реплики |
+| Email_transaction | PostgreSQL | Шардирование по user.email | Репликация master-slave, 2 реплики |
+| Email_labes | PostgreSQL | Шардирование по user.email | Репликация master-slave, 2 реплики |
+| Attachment | PostgreSQL | Шардирование по user.email | Репликация master-slave, 2 реплики |
+| File | S3 |  | Резервирование средствами S3 |
 
 ### Клиентские библиотеки, интеграции
+
+- lib/pq - библиотека для работы с Postgresql на языке go.
+- aws/aws-sdk-go/service/s3 - библиотека для работы с S3 на языке go.
+- Redis для кэширования
 
 ## Список источников
 

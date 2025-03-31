@@ -205,7 +205,7 @@ RPS - 3.5M
 
 **Таблица User**
 
-- idx_user_email(email) - индекс для быстрой авторизации
+- idx_user_email(email) - индекс для быстрой проверки авторизации
 
 **Таблица Email_transaction**
 

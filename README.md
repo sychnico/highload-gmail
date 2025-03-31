@@ -238,8 +238,8 @@ RPS - 3.5M
 | --- | ----------- | ---- | --- |
 | User | PostgreSQL | Шардирование по user.email | Репликация master-slave, 2 реплики |
 | Email_transaction | PostgreSQL | Шардирование по sender_email | Репликация master-slave, 2 реплики |
-| Email_labes | PostgreSQL | Шардирование по user.email | Репликация master-slave, 2 реплики |
-| Attachment | PostgreSQL | Шардирование по user.email | Репликация master-slave, 2 реплики |
+| Email_labes | PostgreSQL | Шардирование по email_transaction_id | Репликация master-slave, 2 реплики |
+| Attachment | PostgreSQL | Шардирование по message_id | Репликация master-slave, 2 реплики |
 | File | S3 |  | Резервирование средствами S3 |
 
 ### Клиентские библиотеки, интеграции

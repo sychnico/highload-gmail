@@ -248,6 +248,8 @@ RPS - 3.5M
 - aws/aws-sdk-go/service/s3 - библиотека для работы с S3 на языке go.
 - Redis для кэширования
 
+## 7. Алгоритмы
+
 ## Список источников
 
 1. https://www.mailmodo.com/guides/email-marketing-statistics/

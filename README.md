@@ -214,7 +214,8 @@ RPS - 3.5M
 
 **Таблица Email_labels**
 
-- idx_transaction_id(email_transaction_id) - индекс для быстрой загрузки меток
+- idx_transaction_id(email_transaction_id) - индекс для быстрой загрузки меток письма
+- idx_transaction_user(user_id) - индекс для быстрой загрузки меток пользователя
 
 **Таблица Attachment**
 
@@ -237,8 +238,8 @@ RPS - 3.5M
 | Таблица | СУБД | Шардирование | Резервирование |
 | --- | ----------- | ---- | --- |
 | User | PostgreSQL | Шардирование по user.email | Репликация master-slave, 2 реплики |
-| Email_transaction | PostgreSQL | Шардирование по sender_email | Репликация master-slave, 2 реплики |
-| Email_labes | PostgreSQL | Шардирование по email_transaction_id | Репликация master-slave, 2 реплики |
+| Email_transaction | PostgreSQL | Шардирование по recipient_email | Репликация master-slave, 2 реплики |
+| Email_labes | PostgreSQL | Шардирование по user_id | Репликация master-slave, 2 реплики |
 | Attachment | PostgreSQL | Шардирование по message_id | Репликация master-slave, 2 реплики |
 | File | S3 |  | Резервирование средствами S3 |
 

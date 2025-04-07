@@ -199,7 +199,7 @@ RPS - 3.5M
 
 ## 6. Физическая схема БД
 
-![image](https://github.com/user-attachments/assets/5cf31904-b53a-448e-913a-bda1bd24c717)
+![image](https://github.com/user-attachments/assets/8ea5dbd8-27ca-4de6-99f2-26e6a22333e0)
 
 ### Индексы
 
@@ -231,7 +231,7 @@ RPS - 3.5M
 
 - Поля sender_username, recipient_username для быстрого отображения отправителя и получателя.
 - Поле has_attachments для избегания лишнего поиска.
-- Поле owner_email для избегания лишних join.
+- Поле owner_id для избегания лишних join.
 
 ### Выбор СУБД, шардирование и резервирование
 
@@ -250,6 +250,15 @@ RPS - 3.5M
 - Redis для кэширования
 
 ## 7. Алгоритмы
+
+Основным сложным и неочевидным алгоритмом в почтовом сервисе является алгоритм получения писем в метке пользователя, отсортированных по времени. Для решения этой задачи был создан вышеупомянутый индекс idx_email_recipient. Алгоритм выглядит следующим образом:
+
+ SELECT t.id, t.sender_email, t.recipient_email, t.subject, t.body, t.sending_date, t.isread
+ FROM email_transaction AS tr
+ JOIN email_labels AS lb ON t.id = lb.email_transaction_id
+ WHERE lb.name = $2
+ AND t.owner_id = $1
+ ORDER BY t.sending_date DESC
 
 В почтовом сервисе не используются какие-либо сложные и неочевидные распределенные алгоритмы по причине невысоких требований к скорости.
 

@@ -209,8 +209,7 @@ RPS - 3.5M
 
 **Таблица Email_transaction**
 
-- idx_email_date(date) - индекс для быстрой сортировки
-- idx_email_recipient(recipient_email) - индекс для быстрой загрузки входящих
+- idx_email_recipient(recipient_email, date) - индекс для быстрой загрузки входящих
 - idx_email_sender(sender_email) - индекс для поиска писем по отправителю
 
 **Таблица Email_labels**

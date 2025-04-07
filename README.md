@@ -199,7 +199,7 @@ RPS - 3.5M
 
 ## 6. Физическая схема БД
 
-![image](https://github.com/user-attachments/assets/06b2f912-afdc-4f63-a9c0-56106dd970e4)
+![image](https://github.com/user-attachments/assets/5cf31904-b53a-448e-913a-bda1bd24c717)
 
 ### Индексы
 
@@ -230,7 +230,8 @@ RPS - 3.5M
 **Таблица Email_transaction**
 
 - Поля sender_username, recipient_username для быстрого отображения отправителя и получателя.
-- Поле has_attachments для избегания лишнего поиска
+- Поле has_attachments для избегания лишнего поиска.
+- Поле owner_email для избегания лишних join.
 
 ### Выбор СУБД, шардирование и резервирование
 

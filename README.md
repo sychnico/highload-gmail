@@ -210,12 +210,12 @@ RPS - 3.5M
 **Таблица Email_transaction**
 
 - idx_email_recipient(recipient_email, date) - индекс для быстрой загрузки входящих
-- idx_email_sender(sender_email) - индекс для поиска писем по отправителю
+- idx_email_sender(sender_email, date) - индекс для поиска писем по отправителю
 
 **Таблица Email_labels**
 
 - idx_transaction_id(email_transaction_id) - индекс для быстрой загрузки меток письма
-- idx_transaction_user(user_id) - индекс для быстрой загрузки меток пользователя
+- idx_transaction_user(user_id, date) - индекс для быстрой загрузки меток пользователя
 
 **Таблица Attachment**
 
@@ -237,8 +237,8 @@ RPS - 3.5M
 
 | Таблица | СУБД | Шардирование | Резервирование |
 | --- | ----------- | ---- | --- |
-| User | PostgreSQL | Шардирование по user.email | Репликация master-slave, 2 реплики |
-| Email_transaction | PostgreSQL | Шардирование по recipient_email | Репликация master-slave, 2 реплики |
+| User | PostgreSQL | Шардирование по user.id | Репликация master-slave, 2 реплики |
+| Email_transaction | PostgreSQL | Шардирование по owner_id | Репликация master-slave, 2 реплики |
 | Email_labes | PostgreSQL | Шардирование по user_id | Репликация master-slave, 2 реплики |
 | Attachment | PostgreSQL | Шардирование по message_id | Репликация master-slave, 2 реплики |
 | File | S3 |  | Резервирование средствами S3 |
@@ -247,7 +247,7 @@ RPS - 3.5M
 
 - lib/pq - библиотека для работы с Postgresql на языке go.
 - aws/aws-sdk-go/service/s3 - библиотека для работы с S3 на языке go.
-- Redis для кэширования
+- Cassandra для кэширования
 
 ## 7. Алгоритмы
 
@@ -258,7 +258,7 @@ RPS - 3.5M
     JOIN email_labels AS lb ON t.id = lb.email_transaction_id
     WHERE lb.name = $2
     AND t.owner_id = $1
-    ORDER BY t.sending_date DESC
+    ORDER BY t.date DESC
 
 ## 8. Технологии
 

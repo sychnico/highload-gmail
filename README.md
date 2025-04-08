@@ -199,7 +199,7 @@ RPS - 3.5M
 
 ## 6. Физическая схема БД
 
-![image](https://github.com/user-attachments/assets/8ea5dbd8-27ca-4de6-99f2-26e6a22333e0)
+![image](https://github.com/user-attachments/assets/1fa8df71-5c70-432c-90b0-e9affe3a0688)
 
 ### Индексы
 

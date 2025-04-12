@@ -199,7 +199,7 @@ RPS - 3.5M
 
 ## 6. Физическая схема БД
 
-![image](https://github.com/user-attachments/assets/cb0f8650-040b-4f31-ade8-1148e9177131)
+![image](https://github.com/user-attachments/assets/bdf0206c-64ee-432d-9dcc-c9a6e0cb519d)
 
 ### Индексы
 
@@ -215,7 +215,7 @@ RPS - 3.5M
 **Таблица Email_labels**
 
 - idx_transaction_id(email_transaction_id) - индекс для быстрой загрузки меток письма
-- idx_transaction_user(user_id, date) - индекс для быстрой загрузки меток пользователя
+- idx_transaction_user(user_email, date) - индекс для быстрой загрузки меток пользователя
 
 **Таблица Attachment**
 
@@ -237,9 +237,9 @@ RPS - 3.5M
 
 | Таблица | СУБД | Шардирование | Резервирование |
 | --- | ----------- | ---- | --- |
-| User | PostgreSQL | Шардирование по user.id | Репликация master-slave, 2 реплики |
-| Email_transaction | PostgreSQL | Шардирование по owner_id | Репликация master-slave, 2 реплики |
-| Email_labes | PostgreSQL | Шардирование по user_id | Репликация master-slave, 2 реплики |
+| User | PostgreSQL | Шардирование по user.email | Репликация master-slave, 2 реплики |
+| Email_transaction | PostgreSQL | Шардирование по owner_email | Репликация master-slave, 2 реплики |
+| Email_labes | PostgreSQL | Шардирование по user_email | Репликация master-slave, 2 реплики |
 | Attachment | PostgreSQL | Шардирование по message_id | Репликация master-slave, 2 реплики |
 | File | S3 |  | Резервирование средствами S3 |
 

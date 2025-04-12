@@ -119,7 +119,7 @@ RPS - 3.5M
 
 ## 5. Логическая схема БД
 
-![image](https://github.com/user-attachments/assets/bb48971e-6f77-4d9d-b459-200400f94a54)
+![image](https://github.com/user-attachments/assets/cbcab839-a572-48ff-9c1d-7ee84faf7128)
 
 ### Описание таблиц
 

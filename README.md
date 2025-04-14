@@ -244,6 +244,7 @@ RPS - 3.5M
 | Email_labes | PostgreSQL | Шардирование по user_email | Репликация master-slave, 2 реплики |
 | Attachment | PostgreSQL | Шардирование по message_id | Репликация master-slave, 2 реплики |
 | File | S3 |  | Резервирование средствами S3 |
+| User_session | Cassandra | Шардирование по user_email | Репликация master-slave, 2 реплики |
 
 ### Клиентские библиотеки, интеграции
 

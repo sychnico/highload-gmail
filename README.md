@@ -217,7 +217,7 @@ RPS - 3.5M
 **Таблица Email_labels**
 
 - idx_transaction_id(email_transaction_id) - индекс для быстрой загрузки меток письма
-- idx_transaction_user(user_email, date) - индекс для быстрой загрузки меток пользователя
+- idx_transaction_user(user_email) - индекс для быстрой загрузки меток пользователя
 
 **Таблица Attachment**
 
@@ -267,13 +267,13 @@ RPS - 3.5M
 
 | Таблица | Размер (количество строк) | Размер (байт) |
 | --- | --- | --- |
-| user | 2.5B ||
-| user_statistics | 2.5B ||
-| user_session | 2.5B ||
-| email_transaction | 42.5T ||
-| email_labels | 75B ||
-| attachments | 10.2T ||
-| file | 10.2T ||
+| user | 2.5B | 2.6TB |
+| user_statistics | 2.5B | 1.32TB |
+| user_session | 2.5B | 1.28TB |
+| email_transaction | 42.5T | 77.8PB |
+| email_labels | 75B | 40.2TB |
+| attachments | 10.2T | 7.9PB |
+| file | 10.2T | 4335PB |
 
 
 ## 7. Алгоритмы

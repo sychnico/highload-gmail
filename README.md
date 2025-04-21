@@ -265,15 +265,15 @@ RPS - 3.5M
 
 Общий размер таблиц на 2.5 млрд пользователей
 
-| Таблица | Размер (количество строк) |
-| --- | --- |
-| user | 2.5B |
-| user_statistics | 2.5B |
-| user_session | 2.5B |
-| email_transaction | 42.5T |
-| email_labels | 75B |
-| attachments | 10.2T |
-| file | 10.2T |
+| Таблица | Размер (количество строк) | Размер (байт) |
+| --- | --- | --- |
+| user | 2.5B ||
+| user_statistics | 2.5B ||
+| user_session | 2.5B ||
+| email_transaction | 42.5T ||
+| email_labels | 75B ||
+| attachments | 10.2T ||
+| file | 10.2T ||
 
 
 ## 7. Алгоритмы

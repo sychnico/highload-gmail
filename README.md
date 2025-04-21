@@ -220,7 +220,7 @@ RPS - 3.5M
 
 - idx_transaction_id(email_transaction_id) - индекс для быстрой загрузки меток письма
 - idx_transaction_user(user_email) - индекс для быстрой загрузки меток пользователя
-- idx_label_id(label_id) - индекс для быстрой загрузки писем метки
+- idx_label_id(label_id, user_email) - индекс для быстрой загрузки писем метки
 
 **Таблица Attachment**
 

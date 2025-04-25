@@ -321,7 +321,7 @@ RPS - 3.5M
 
 ## 10. Схема проекта
 
-![image](https://github.com/user-attachments/assets/2c5951c5-a225-42dd-9aee-4d19b9059956)
+![image](https://github.com/user-attachments/assets/c262b174-b457-418e-87b1-6976743eba47)
 
 ### Сервисы
 

@@ -330,6 +330,10 @@ RPS - 3.5M
 - **smtp-service** - отвечает за отправку и получение писем.
 - **attach-secvice** - отвечает за загрузку файлов вложений.
 
+## 11. Расчет ресурсов
+
+
+
 ## Список источников
 
 1. https://www.mailmodo.com/guides/email-marketing-statistics/

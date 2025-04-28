@@ -288,8 +288,8 @@ RPS - 3.5M
 Основным сложным и неочевидным алгоритмом в почтовом сервисе является алгоритм получения писем в метке пользователя, отсортированных по времени. Для решения этой задачи был создан вышеупомянутый индекс idx_email_recipient. Алгоритм выглядит следующим образом:
 
     SELECT t.id, t.sender_email, t.recipient_email, t.subject, t.body, t.sending_date, t.isread
-    FROM email_labels AS tr
-    WHERE tr.name = $2
+    FROM email_labels AS t
+    WHERE t.name = $2
     AND t.owner_email = $1
     ORDER BY t.date DESC
 

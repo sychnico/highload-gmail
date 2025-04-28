@@ -220,7 +220,7 @@ RPS - 3.5M
 
 - idx_transaction_id(email_transaction_id) - индекс для быстрой загрузки меток письма
 - idx_transaction_user(user_email) - индекс для быстрой загрузки меток пользователя
-- idx_label_id(label_id, user_emailб date) - индекс для быстрой загрузки писем метки
+- idx_label_id(label_id, user_email, date) - индекс для быстрой загрузки писем метки
 
 **Таблица Attachment**
 
@@ -288,10 +288,9 @@ RPS - 3.5M
 Основным сложным и неочевидным алгоритмом в почтовом сервисе является алгоритм получения писем в метке пользователя, отсортированных по времени. Для решения этой задачи был создан вышеупомянутый индекс idx_email_recipient. Алгоритм выглядит следующим образом:
 
     SELECT t.id, t.sender_email, t.recipient_email, t.subject, t.body, t.sending_date, t.isread
-    FROM email_transaction AS tr
-    JOIN email_labels AS lb ON t.id = lb.email_transaction_id
-    WHERE lb.name = $2
-    AND t.owner_id = $1
+    FROM email_labels AS tr
+    WHERE tr.name = $2
+    AND t.owner_email = $1
     ORDER BY t.date DESC
 
 ## 8. Технологии

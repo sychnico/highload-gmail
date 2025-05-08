@@ -331,7 +331,31 @@ RPS - 3.5M
 
 ## 11. Расчет ресурсов
 
+### Необходимые ресурсы
 
+| Сервис | RPS | CPU | RAM | Net |
+| ------ | ----------------------------------- | --- | --- | --- |
+| Nginx | 3.5M | 350 | 3.5 GB | 531Gbit/s |
+| auth-service | 3.5M | 700 | 7GB | 175Gbit/s |
+| api-service | 3.1M | 620 | 6.2GB | 377Gbit/s |
+| smtp-service | 1.4M | 280 | 2.8GB | 247Gbit/s |
+| attach-service | 355K | 71 | 710MB | 174Gbit/s |
+| Cassandra | 3.5M | 1750 | 112GB | 175Gbit/s |
+| PostgreSQL | 3.5M | 12K | 768GB | 182Gbit/s |
+| S3 | 355K | 710 | 23GB | 174Gbit/s |
+
+### Хостинг
+
+| Сервис | Хостинг |
+| ------ | ------- |
+| Nginx |  |
+| auth-service |  |
+| api-service |  |
+| smtp-service |  |
+| attach-service |  |
+| Cassandra |  |
+| PostgreSQL |  |
+| S3 |  |
 
 ## Список источников
 

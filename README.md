@@ -344,18 +344,25 @@ RPS - 3.5M
 | PostgreSQL | 3.5M | 12K | 768GB | 182Gbit/s |
 | S3 | 355K | 710 | 23GB | 174Gbit/s |
 
+### Конфигурация сервисов в Kubernetes
+
+| Сервис    | CPU/r | CPU/l | RAM/r | RAM/l  | Cnt |
+| --------- | ----- | ----- | ----- | ------ | --- |
+| newsfeed  |     8 |     8 |  8 Gb |  32 Gb | 400 |
+| messanger |     8 |    16 | 80 Gb | 120 Gb |  64 |
+
 ### Хостинг
 
-| Сервис | Хостинг |
-| ------ | ------- |
-| Nginx |  |
-| auth-service |  |
-| api-service |  |
-| smtp-service |  |
-| attach-service |  |
-| Cassandra |  |
-| PostgreSQL |  |
-| S3 |  |
+| Сервис | Хостинг | Конфигурация                       | Cores | Cnt | Покупка | Аренда |
+| -------- | ------- | ---------------------------------- | ----- | --- | ------- | ----- |
+| Nginx |  |  |  |  |  |  |
+| auth-service |  |  |  |  |  |  |
+| api-service |  |  |  |  |  |  |
+| smtp-service |  |  |  |  |  |  |
+| attach-service |  |  |  |  |  |  |
+| Cassandra |  |  |  |  |  |  |
+| PostgreSQL |  |  |  |  |  |  |
+| S3 |  |  |  |  |  |  |
 
 ## Список источников
 

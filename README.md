@@ -348,8 +348,11 @@ RPS - 3.5M
 
 | Сервис    | CPU/r | CPU/l | RAM/r | RAM/l  | Cnt |
 | --------- | ----- | ----- | ----- | ------ | --- |
-| newsfeed  |     8 |     8 |  8 Gb |  32 Gb | 400 |
-| messanger |     8 |    16 | 80 Gb | 120 Gb |  64 |
+| Nginx(внутр.) |  |  |  |  |  |
+| auth-service |  |  |  |  |  |
+| api-service |  |  |  |  |  |
+| smtp-service |  |  |  |  |  |
+| attach-service |  |  |  |  |  |
 
 ### Хостинг
 

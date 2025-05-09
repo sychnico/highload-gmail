@@ -359,14 +359,15 @@ RPS - 3.5M
 
 | Сервис | Хостинг | Конфигурация                       | Cores | Cnt | Покупка | Аренда |
 | -------- | ------- | ---------------------------------- | ----- | --- | ------- | ----- |
-| Nginx | own |  |  |  |  |  |
-| auth-service | own |  |  |  |  |  |
-| api-service | own |  |  |  |  |  |
-| smtp-service | own |  |  |  |  |  |
-| attach-service | own |  |  |  |  |  |
-| Cassandra | own |  |  |  |  |  |
-| PostgreSQL | own |  |  |  |  |  |
-| S3 | own |  |  |  |  |  |
+| Nginx(внеш.) | own | 2xEPYC 7B12/32x64GB/4xNVMe8T/4x400Gb/s | 128 | 3 | $7500 |  |
+| Nginx(внутр.) | own | 2xEPYC 7B12/32x64GB/4xNVMe8T/4x400Gb/s | 128 | 3 | $7500 |  |
+| auth-service | own | 2xEPYC 7B12/32x64GB/4xNVMe8T/4x400Gb/s | 128 | 6 | $15000 |  |
+| api-service | own | 2xEPYC 7B12/32x64GB/4xNVMe8T/4x400Gb/s | 128 | 5 | $12500 |  |
+| smtp-service | own | 2xEPYC 7B12/32x64GB/4xNVMe8T/4x400Gb/s | 128 | 3 | $7500 |  |
+| attach-service | own | 2xEPYC 7B12/32x64GB/4xNVMe8T/4x400Gb/s | 128 | 1 | $2500 |  |
+| Cassandra | own | 2x6248/16x128GB/8xSSD32T/2x25Gb/s | 80 | 22 | $66000 |  |
+| PostgreSQL | own | 2x6248/16x128GB/8xSSD32T/2x25Gb/s | 80 | 150 | $450000 |  |
+| S3 | own | 2x6248/16x128GB/8xSSD32T/2x25Gb/s | 80 | 9 | $27000 |  |
 
 ## Список источников
 

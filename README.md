@@ -348,24 +348,24 @@ RPS - 3.5M
 
 | Сервис    | CPU/r | CPU/l | RAM/r | RAM/l  | Cnt |
 | --------- | ----- | ----- | ----- | ------ | --- |
-| Nginx(внутр.) |  |  |  |  |  |
-| auth-service |  |  |  |  |  |
-| api-service |  |  |  |  |  |
-| smtp-service |  |  |  |  |  |
-| attach-service |  |  |  |  |  |
+| Nginx(внутр.) | 8 | 16 | 80MB | 160MB | 45 |
+| auth-service | 8 | 16 | 80MB | 160MB | 90 |
+| api-service | 8 | 16 | 80MB | 160MB | 80 |
+| smtp-service | 8 | 16 | 80MB | 160MB | 35 |
+| attach-service | 8 | 16 | 80MB | 160MB | 9 |
 
 ### Хостинг
 
 | Сервис | Хостинг | Конфигурация                       | Cores | Cnt | Покупка | Аренда |
 | -------- | ------- | ---------------------------------- | ----- | --- | ------- | ----- |
-| Nginx |  |  |  |  |  |  |
-| auth-service |  |  |  |  |  |  |
-| api-service |  |  |  |  |  |  |
-| smtp-service |  |  |  |  |  |  |
-| attach-service |  |  |  |  |  |  |
-| Cassandra |  |  |  |  |  |  |
-| PostgreSQL |  |  |  |  |  |  |
-| S3 |  |  |  |  |  |  |
+| Nginx | own |  |  |  |  |  |
+| auth-service | own |  |  |  |  |  |
+| api-service | own |  |  |  |  |  |
+| smtp-service | own |  |  |  |  |  |
+| attach-service | own |  |  |  |  |  |
+| Cassandra | own |  |  |  |  |  |
+| PostgreSQL | own |  |  |  |  |  |
+| S3 | own |  |  |  |  |  |
 
 ## Список источников
 

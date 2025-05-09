@@ -335,7 +335,8 @@ RPS - 3.5M
 
 | Сервис | RPS | CPU | RAM | Net |
 | ------ | ----------------------------------- | --- | --- | --- |
-| Nginx | 3.5M | 350 | 3.5 GB | 531Gbit/s |
+| Nginx(внеш.) | 3.5M | 350 | 3.5 GB | 531Gbit/s |
+| Nginx(внутр.) | 3.5M | 350 | 3.5 GB | 531Gbit/s |
 | auth-service | 3.5M | 700 | 7GB | 175Gbit/s |
 | api-service | 3.1M | 620 | 6.2GB | 377Gbit/s |
 | smtp-service | 1.4M | 280 | 2.8GB | 247Gbit/s |

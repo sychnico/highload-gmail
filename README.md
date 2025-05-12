@@ -369,6 +369,8 @@ RPS - 3.5M
 | PostgreSQL | own | 2x6248/16x128GB/8xSSD32T/2x25Gb/s | 80 | 150 | $450000 |  |
 | S3 | own | 2x6248/16x128GB/8xSSD32T/2x25Gb/s | 80 | 9 | $27000 |  |
 
+Общая стоимость - $595500
+
 ## Список источников
 
 1. https://www.mailmodo.com/guides/email-marketing-statistics/

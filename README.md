@@ -359,17 +359,17 @@ RPS - 3.5M
 
 | Сервис | Хостинг | Конфигурация                       | Cores | Cnt | Покупка | Аренда |
 | -------- | ------- | ---------------------------------- | ----- | --- | ------- | ----- |
-| Nginx(внеш.) | own | 2xEPYC 7B12/1x64MB/4xNVMe8T/1x10Gb/s | 128 | 57 | $7500 | - |
-| Nginx(внутр.) | own | 2xEPYC 7B12/1x512MB/4xNVMe8T/1x50Gb/s | 32 | 12 | $7500 | - |
-| auth-service | own | 2xEPYC 7B12/1x512MB/4xNVMe8T/1x50Gb/s | 32 | 24 | $15000 | - |
-| api-service | own | 2xEPYC 7B12/1x512MB/4xNVMe8T/1x50Gb/s | 32 | 20 | $12500 | - |
-| smtp-service | own | 2xEPYC 7B12/1x512MB/4xNVMe8T/1x50Gb/s | 32 | 12 | $7500 | - |
-| attach-service | own | 2xEPYC 7B12/1x512MB/4xNVMe8T/1x50Gb/s | 32 | 4 | $2500 | - |
-| Cassandra | own | 2x6248/16x128GB/8xSSD32T/2x25Gb/s | 80 | 22 | $66000 | - |
-| PostgreSQL | own | 2x6248/16x128GB/8xSSD32T/2x25Gb/s | 80 | 340 | $1020000 | - |
-| S3 | own | 2x6248/16x128GB/8xSSD32T/2x25Gb/s | 80 | 16934 | $50802000 | - |
+| Nginx(внеш.) | own | 2xEPYC 7B12/1x64MB/4xNVMe8T/1x10Gb/s | 128 | 57x1.2=69 | $7500x1.2=$9000 | - |
+| Nginx(внутр.) | own | 2xEPYC 7B12/1x512MB/4xNVMe8T/1x50Gb/s | 32 | 12x1.2=15 | $7500x1.2=$9000 | - |
+| auth-service | own | 2xEPYC 7B12/1x512MB/4xNVMe8T/1x50Gb/s | 32 | 24x1.2=29 | $15000x1.2=$18000 | - |
+| api-service | own | 2xEPYC 7B12/1x512MB/4xNVMe8T/1x50Gb/s | 32 | 20x1.2=24 | $12500x1.2=$15000 | - |
+| smtp-service | own | 2xEPYC 7B12/1x512MB/4xNVMe8T/1x50Gb/s | 32 | 12x1.2=15 | $7500x1.2=$9000 | - |
+| attach-service | own | 2xEPYC 7B12/1x512MB/4xNVMe8T/1x50Gb/s | 32 | 4x1.2=5 | $2500x1.2=$3000 | - |
+| Cassandra | own | 2x6248/16x128GB/8xSSD32T/2x25Gb/s | 80 | 22x3=66 | $66000x3=$198000 | - |
+| PostgreSQL | own | 2x6248/16x128GB/8xSSD32T/2x25Gb/s | 80 | 340x3=1020 | $1020000x3=$3060000 | - |
+| S3 | own | 2x6248/16x128GB/8xSSD32T/2x25Gb/s | 80 | 16934x3=50802 | $50802000x3=$152406000 | - |
 
-Общая стоимость - $51,940,500
+Общая стоимость - $155,727,000
 
 ## Список источников
 

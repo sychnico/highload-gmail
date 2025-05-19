@@ -366,10 +366,10 @@ RPS - 3.5M
 | smtp-service | own | 2xEPYC 7B12/1x512MB/4xNVMe8T/1x50Gb/s | 32 | 12 | $7500 | - |
 | attach-service | own | 2xEPYC 7B12/1x512MB/4xNVMe8T/1x50Gb/s | 32 | 4 | $2500 | - |
 | Cassandra | own | 2x6248/16x128GB/8xSSD32T/2x25Gb/s | 80 | 22 | $66000 | - |
-| PostgreSQL | own | 2x6248/16x128GB/8xSSD32T/2x25Gb/s | 80 | 150 | $450000 | - |
-| S3 | own | 2x6248/16x128GB/8xSSD32T/2x25Gb/s | 80 | 9 | $27000 | - |
+| PostgreSQL | own | 2x6248/16x128GB/8xSSD32T/2x25Gb/s | 80 | 340 | $1020000 | - |
+| S3 | own | 2x6248/16x128GB/8xSSD32T/2x25Gb/s | 80 | 16934 | $50802000 | - |
 
-Общая стоимость - $595500
+Общая стоимость - $51,940,500
 
 ## Список источников
 
